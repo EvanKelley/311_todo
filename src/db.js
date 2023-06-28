@@ -1,3 +1,4 @@
+// Make connection pool
 let mysql = require("mysql");
 
 let pool = mysql.createPool({
@@ -8,5 +9,5 @@ let pool = mysql.createPool({
   database: process.env.DB_NAME
 });
 
-
+// Export pool
 module.exports = pool;
